@@ -1,0 +1,12 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-9.094947e-13" y1="15" x2="30" y2="15">
+	<stop  offset="0" style="stop-color:#D55B26"/>
+	<stop  offset="1" style="stop-color:#EF7D31"/>
+</linearGradient>
+<path class="st0" d="M25,30H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h20c2.8,0,5,2.2,5,5v20C30,27.8,27.8,30,25,30z"/>
+	<path id="Rectangle_63" class="st1" d="M17.6,12l1.1,0.9c0.1,0.1,0.1,0.2,0,0.2l-4.6,5.5c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0-0.1,0	l-3-2.5c-0.1-0.1-0.1-0.2,0-0.2l0.9-1.1c0.1-0.1,0.2-0.1,0.2,0l1.8,1.6l3.6-4.3C17.5,12,17.6,12,17.6,12z"/>
+</svg>

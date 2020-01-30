@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Druk Text Wide';
+  src: url('../fonts/subset-DrukTextWide-Bold.eot');
+  src: url('../fonts/subset-DrukTextWide-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-DrukTextWide-Bold.woff2') format('woff2'),
+  url('../fonts/subset-DrukTextWide-Bold.woff') format('woff'),
+  url('../fonts/subset-DrukTextWide-Bold.ttf') format('truetype'),
+  url('../fonts/subset-DrukTextWide-Bold.svg#DrukTextWide-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: url('../fonts/subset-DINPro.eot');
+  src: url('../fonts/subset-DINPro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-DINPro.woff2') format('woff2'),
+  url('../fonts/subset-DINPro.woff') format('woff'),
+  url('../fonts/subset-DINPro.ttf') format('truetype'),
+  url('../fonts/subset-DINPro.svg#DINPro') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: url('../fonts/subset-DINPro-Bold.eot');
+  src: url('../fonts/subset-DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-DINPro-Bold.woff2') format('woff2'),
+  url('../fonts/subset-DINPro-Bold.woff') format('woff'),
+  url('../fonts/subset-DINPro-Bold.ttf') format('truetype'),
+  url('../fonts/subset-DINPro-Bold.svg#DINPro-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../fonts/subset-MinionPro-Regular.eot');
+  src: url('../fonts/subset-MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-MinionPro-Regular.woff2') format('woff2'),
+  url('../fonts/subset-MinionPro-Regular.woff') format('woff'),
+  url('../fonts/subset-MinionPro-Regular.ttf') format('truetype'),
+  url('../fonts/subset-MinionPro-Regular.svg#MinionPro-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
