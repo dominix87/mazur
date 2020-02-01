@@ -18,12 +18,79 @@ var Index =
     observer.observe();
 
 
+    $('.accordionItem', '.section14').not(':first').find('.text').hide();
+
     $('input[name=phone]').mask('+38(099)999-99-99');
 
 
     Index.magnificPopUp();
     Index.fixedHeader();
-    Index.tinyAnimation();
+    // Index.tinyAnimation();
+    Index.reviewsSliderInit();
+    Index.mobileSliderInit();
+    Index.showAccordionItems();
+  },
+
+  showAccordionItems: function(){
+    var block = $('.accordionBlock', '.section14'),
+      item = $('.accordionItem' ,block),
+      switcher = $('.switcher', item);
+
+    $('.title', item).on('click', function(){
+      $('.title', item).not(this).parent().removeClass('active').find('.text').slideUp('slow');
+      $(this).parent().addClass('active').find('.text').slideDown('slow');
+    });
+
+    $('.switcher', item).on('click', function(){
+      $('.switcher', item).not(this).parent().removeClass('active').find('.text').slideUp('slow');
+      $(this).parent().addClass('active').find('.text').slideDown('slow');
+
+    })
+  },
+
+  mobileSliderInit: function(){
+    var slider = $('.innerWrapper', '.section11');
+
+    if($(window).width() < 991){
+      $(slider).slick({
+        slidesToShow: 1,
+        dots: true,
+        arrows: true,
+        fade: true,
+        adaptiveHeight: true,
+        prevArrow: '<button class="prev__arrow"><svg xmlns="http://www.w3.org/2000/svg" id="right" viewBox="0 0 45 45"><path class="first" d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#right_1)"/><path d="M24.9,22.4l-3.7-3.5c-0.1-0.1-0.2-0.1-0.2,0l-0.9,0.9c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l2.6,2.5L20.1,25c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l0.9,0.9c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0l3.7-3.5c0,0,0-0.1,0-0.1C25,22.5,24.9,22.4,24.9,22.4z" fill="#FFFFFF"/></svg></button>',
+        nextArrow: '<button class="next__arrow"><svg xmlns="http://www.w3.org/2000/svg" id="right" viewBox="0 0 45 45"><path class="first" d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#right_1)"/><path d="M24.9,22.4l-3.7-3.5c-0.1-0.1-0.2-0.1-0.2,0l-0.9,0.9c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l2.6,2.5L20.1,25c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l0.9,0.9c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0l3.7-3.5c0,0,0-0.1,0-0.1C25,22.5,24.9,22.4,24.9,22.4z" fill="#FFFFFF"/></svg></button>',
+        mobileFirst: true,
+      })
+    }
+    else{
+      return;
+    }
+
+
+
+
+  },
+
+  reviewsSliderInit: function(){
+    var slider = $('.sliderBlock', '.section10');
+
+    $(slider).slick({
+      slidesToShow: 1,
+      dots: true,
+      arrows: true,
+      fade: true,
+      prevArrow: '<button class="prev__arrow"><svg xmlns="http://www.w3.org/2000/svg" id="right" viewBox="0 0 45 45"><path class="first" d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#right_1)"/><path d="M24.9,22.4l-3.7-3.5c-0.1-0.1-0.2-0.1-0.2,0l-0.9,0.9c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l2.6,2.5L20.1,25c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l0.9,0.9c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0l3.7-3.5c0,0,0-0.1,0-0.1C25,22.5,24.9,22.4,24.9,22.4z" fill="#FFFFFF"/></svg></button>',
+      nextArrow: '<button class="next__arrow"><svg xmlns="http://www.w3.org/2000/svg" id="right" viewBox="0 0 45 45"><path class="first" d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#right_1)"/><path d="M24.9,22.4l-3.7-3.5c-0.1-0.1-0.2-0.1-0.2,0l-0.9,0.9c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l2.6,2.5L20.1,25c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l0.9,0.9c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0l3.7-3.5c0,0,0-0.1,0-0.1C25,22.5,24.9,22.4,24.9,22.4z" fill="#FFFFFF"/></svg></button>',
+      mobileFirst: true,
+      responsive:[{
+        breakpoint: 991,
+        settings:{
+          slidesToShow: 2,
+          fade: false
+        }
+      }]
+    })
   },
 
   tinyAnimation: function(){
@@ -49,6 +116,17 @@ var Index =
 
 
   magnificPopUp: function(){
+
+    $('.popup-image').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      closeBtnInside: false,
+      fixedContentPos: true,
+      mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+      image: {
+        verticalFit: true
+      }
+    });
 
     $('.popup-gallery').magnificPopup({
       type:'image',

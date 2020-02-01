@@ -144,16 +144,24 @@
         <stop  offset="0" style="stop-color:#D55B26"/>
         <stop  offset="1" style="stop-color:#EF7D31"/>
     </linearGradient>
+    <linearGradient id="faq_minus_2" gradientUnits="userSpaceOnUse" x1="0" y1="-11.5" x2="45" y2="-11.5" gradientTransform="matrix(1 0 0 1 0 34)">
+        <stop  offset="0" style="stop-color:#EF7D31"/>
+        <stop  offset="1" style="stop-color:#D55B26"/>
+    </linearGradient>
     <symbol xmlns="http://www.w3.org/2000/svg" id="faq_minus" viewBox="0 0 45 45">
-        <path d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#faq_minus_1)"/>
+        <path class="first" d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#faq_minus_1)"/>
         <rect x="17.5" y="21.5" width="10" height="2" fill="#FFFFFF"/>
     </symbol>
     <linearGradient id="faq_plus_1" gradientUnits="userSpaceOnUse" x1="0" y1="-11.5" x2="45" y2="-11.5" gradientTransform="matrix(1 0 0 1 0 34)">
         <stop  offset="0" style="stop-color:#D55B26"/>
         <stop  offset="1" style="stop-color:#EF7D31"/>
     </linearGradient>
+    <linearGradient id="faq_plus_2" gradientUnits="userSpaceOnUse" x1="0" y1="-11.5" x2="45" y2="-11.5" gradientTransform="matrix(1 0 0 1 0 34)">
+        <stop  offset="0" style="stop-color:#EF7D31"/>
+        <stop  offset="1" style="stop-color:#D55B26"/>
+    </linearGradient>
     <symbol xmlns="http://www.w3.org/2000/svg" id="faq_plus" viewBox="0 0 45 45">
-        <path d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#faq_plus_1)"/>
+        <path class="first" d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#faq_plus_1)"/>
         <rect x="21.5" y="17.5" width="2" height="10" fill="#FFFFFF"/>
         <rect x="17.5" y="21.5" width="10" height="2" fill="#FFFFFF"/>
     </symbol>
@@ -364,6 +372,10 @@
         <stop  offset="0" style="stop-color:#D55B26"/>
         <stop  offset="1" style="stop-color:#EF7D31"/>
     </linearGradient>
+    <linearGradient id="right_2" gradientUnits="userSpaceOnUse" x1="0" y1="21.5" x2="45" y2="21.5" gradientTransform="matrix(1 0 0 -1 0 44)">
+        <stop  offset="0" style="stop-color:#EF7D31"/>
+        <stop  offset="1" style="stop-color:#D55B26"/>
+    </linearGradient>
     <symbol xmlns="http://www.w3.org/2000/svg" id="right" viewBox="0 0 45 45">
         <path d="M40,45H5c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h35c2.8,0,5,2.2,5,5v35C45,42.8,42.8,45,40,45z" fill="url(#right_1)"/>
         <path d="M24.9,22.4l-3.7-3.5c-0.1-0.1-0.2-0.1-0.2,0l-0.9,0.9c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l2.6,2.5L20.1,25c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1l0.9,0.9c0,0,0.1,0,0.1,0c0,0,0.1,0,0.1,0l3.7-3.5c0,0,0-0.1,0-0.1C25,22.5,24.9,22.4,24.9,22.4z" fill="#FFFFFF"/>
@@ -550,6 +562,9 @@
         <div class="innerWrapper"><a class="logo" href="#section1" onclick="Index.go_to(this, event)">
                 <svg class="icon icon-small_logo ">
                   <use xlink:href="#small_logo"></use>
+                </svg>
+                <svg class="icon icon-logo_black ">
+                  <use xlink:href="#logo_black"></use>
                 </svg></a>
           <nav class="navigation" id="mobMenu">
             <ul>
@@ -565,11 +580,7 @@
             </button>
           </nav>
           <div class="additionBtns"><a class="phone" href="tel:+380973452212" target="_blank">+38 (097) 345-22-12</a>
-            <button class="callBackBtn" onclick="Index.callBackForm()"><span>Заказать звонок</span>
-                  <svg class="icon icon-arrow ">
-                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
-                  </svg>
-            </button>
+            <button class="callBackBtn" onclick="Index.callBackForm()">ЗАМОВИТИ ДЗВІНОК</button>
             <button class="openMenu" onclick="Index.openMenu()">
                   <svg class="icon icon-menu ">
                     <use xlink:href="#menu"></use>
@@ -751,8 +762,9 @@
                       </svg>
                 </div>
                 <div class="textBlock">
-                  <div class="title content_title">Переплата</div>
-                  <div class="text content_text">Витрачається більше матеріалу — в&nbsp;результаті переплата за штукатурку і&nbsp;підготовку стін до фарбування або шпалер</div>
+                  <div class="title content_title">Дефекти і тріщини
+                    <div class="text content_text">Часто нерівномірно висихає — з'являються тріщини та інші дефекти</div>
+                  </div>
                 </div>
               </div>
               <div class="item">
@@ -762,8 +774,8 @@
                       </svg>
                 </div>
                 <div class="textBlock">
-                  <div class="title content_title">Дефекти і тріщини</div>
-                  <div class="text content_text">Часто нерівномірно висихає — з'являються тріщини та інші дефекти</div>
+                  <div class="title content_title">Переплата</div>
+                  <div class="text content_text">Витрачається більше матеріалу — в&nbsp;результаті переплата за штукатурку і&nbsp;підготовку стін до фарбування або шпалер</div>
                 </div>
               </div>
               <div class="item">
@@ -794,37 +806,37 @@
                       <svg class="icon icon-check ">
                         <use xlink:href="#check"></use>
                       </svg>
-                  <div class="text"><b>Штукатурка добре врізається в основу</b> за рахунок високого тиску.</div>
+                  <div class="text content_text"><b>Штукатурка добре врізається в основу</b> за рахунок високого тиску.</div>
                 </div>
                 <div class="item">
                       <svg class="icon icon-check ">
                         <use xlink:href="#check"></use>
                       </svg>
-                  <div class="text"><b>Рівно лягає</b> — можна швидко підготувати стіни під фарбування, шпалери, плитку.</div>
+                  <div class="text content_text"><b>Рівно лягає</b> — можна швидко підготувати стіни під фарбування, шпалери, плитку.</div>
                 </div>
                 <div class="item">
                       <svg class="icon icon-check ">
                         <use xlink:href="#check"></use>
                       </svg>
-                  <div class="text"><b>Дозволяє заощадити до 40%</b> за рахунок економної витрати матеріалу і технологічності процесу.</div>
+                  <div class="text content_text"><b>Дозволяє заощадити до 40%</b> за рахунок економної витрати матеріалу і технологічності процесу.</div>
                 </div>
                 <div class="item">
                       <svg class="icon icon-check ">
                         <use xlink:href="#check"></use>
                       </svg>
-                  <div class="text">За допомогою механізованої штукатурки, за той самий час, <b>можна зробити в 3-4 рази більшу площу,</b> ніж вручну.</div>
+                  <div class="text content_text">За допомогою механізованої штукатурки, за той самий час, <b>можна зробити в 3-4 рази більшу площу,</b> ніж вручну.</div>
                 </div>
                 <div class="item">
                       <svg class="icon icon-check ">
                         <use xlink:href="#check"></use>
                       </svg>
-                  <div class="text"><b>Рівномірно висихає</b> загальною масою.</div>
+                  <div class="text content_text"><b>Рівномірно висихає</b><br> загальною масою.</div>
                 </div>
                 <div class="item">
                       <svg class="icon icon-check ">
                         <use xlink:href="#check"></use>
                       </svg>
-                  <div class="text"><b>Рівномірно висихає</b> загальною масою.</div>
+                  <div class="text content_text"><b>Рівномірно висихає</b><br> загальною масою.</div>
                 </div>
               </div>
             </div>
@@ -837,6 +849,88 @@
             <div class="imageBlock"><img src="img/Bl6Img1.png" alt=""></div>
             <div class="formBlock">
               <div class="stages"></div>
+              <div class="title content_title">Розрахуйте прямо зараз вартість машинної штукатурки для вашого об'єкту</div>
+              <div class="questionWrap">
+                <form onsubmit="Index.sendInit(this);return false" novalidate>
+                  <input type="hidden" name="project_name" value="B-lawyer">
+                  <input type="hidden" name="admin_email" value="">
+                  <input type="hidden" name="registration_type" value="CallBack form">
+                  <input type="hidden" name="order_type" value="Call request">
+                  <input type="hidden" name="page_url" value="">
+                  <input type="hidden" name="user_agent" value="&lt;?php echo $user_agent?&gt;">
+                  <input type="hidden" name="utm_source" value="&lt;?php echo $data[&quot;utm_source&quot;]?&gt;">
+                  <input type="hidden" name="utm_campaign" value="&lt;?php echo $data[&quot;utm_campaign&quot;]?&gt;">
+                  <input type="hidden" name="utm_medium" value="&lt;?php echo $data[&quot;utm_medium&quot;]?&gt;">
+                  <input type="hidden" name="utm_term" value="&lt;?php echo $data[&quot;utm_term&quot;]?&gt;">
+                  <input type="hidden" name="utm_content" value="&lt;?php echo $data[&quot;utm_content&quot;]?&gt;">
+                  <input type="hidden" name="ref" value="&lt;?php echo $data[&quot;ref&quot;]?&gt;">
+                  <input type="hidden" name="ip_address" value="&lt;?php echo $data[&quot;ip_address&quot;]?&gt;">
+                  <input type="hidden" name="city" value="">
+                  <input type="hidden" name="region" value="">
+                  <input type="hidden" name="country" value="">
+                  <input type="hidden" name="client_id" value="&lt;?php echo $data[&quot;client_id&quot;]?&gt;">
+                  <input type="hidden" name="utmcsr" value="&lt;?php echo $data[&quot;utmcsr&quot;]?&gt;">
+                  <input type="hidden" name="utmccn" value="&lt;?php echo $data[&quot;utmccn&quot;]?&gt;">
+                  <input type="hidden" name="utmcmd" value="&lt;?php echo $data[&quot;utmcmd&quot;]?&gt;">
+                  <input type="hidden" name="click_id" value="&lt;?php echo $data[&quot;click_id&quot;]?&gt;">
+                  <input type="hidden" name="affilliate_id" value="&lt;?php echo $data[&quot;affiliate_id&quot;]?&gt;">
+                  <div class="question first">
+                    <div class="questionTitle content_text">1. Введіть розмір площі</div>
+                    <div class="inputWrapper">
+                      <input name="square" type="tel" required>
+                      <div class="text"><span>Площа</span></div>
+                    </div>
+                    <div class="btnWrap"><span class="btn"><span>ДАЛІ</span>
+                            <svg class="icon icon-rightArrow ">
+                              <use xlink:href="#rightArrow"></use>
+                            </svg></span></div>
+                  </div>
+                  <div class="question second">
+                    <div class="questionTitle content_text">2. Для чого:</div>
+                    <div class="inputWrapper checkbox">
+                      <input name="square" type="checkbox" id="check1">
+                      <label for="check1">Під фарбування</label>
+                    </div>
+                    <div class="inputWrapper checkbox">
+                      <input name="square" type="checkbox" id="check2">
+                      <label for="check2">Під шпалери</label>
+                    </div>
+                    <div class="btnWrap"><span class="btn"><span>ДАЛІ</span>
+                            <svg class="icon icon-rightArrow ">
+                              <use xlink:href="#rightArrow"></use>
+                            </svg></span></div>
+                  </div>
+                  <div class="question third">
+                    <div class="questionTitle content_text">3. Чий матеріал:</div>
+                    <div class="inputWrapper checkbox">
+                      <input name="square" type="checkbox" id="check3">
+                      <label for="check3">Свій матеріал</label>
+                    </div>
+                    <div class="inputWrapper checkbox">
+                      <input name="square" type="checkbox" id="check4">
+                      <label for="check4">Наш матеріал</label>
+                    </div>
+                    <div class="btnWrap"><span class="btn"><span>ДАЛІ</span>
+                            <svg class="icon icon-rightArrow ">
+                              <use xlink:href="#rightArrow"></use>
+                            </svg></span></div>
+                  </div>
+                  <div class="question fourth">
+                    <div class="questionTitle content_text">1. Введіть свій телефон</div>
+                    <div class="inputWrapper">
+                      <input name="phone" type="tel" required>
+                      <div class="text"><span>Площа</span></div>
+                    </div>
+                    <div class="btnWrap">
+                      <button class="btn"><span>Відправити</span>
+                            <svg class="icon icon-time ">
+                              <use xlink:href="#time"></use>
+                            </svg>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -846,27 +940,342 @@
           <h2 class="title">Про компанію Mazur Group</h2>
           <div class="innerWrapper">
             <div class="leftSide">
-              <div class="topText">Більше 10 років працюємо в сфері будівництва, інженерних та оздоблювальних робіт в Кам'янці-Подільському.</div>
-              <div class="imageBlock"><img src="Bl7Img1.png" alt="">
-                <div class="imagetext">Особисто відповідаємо за якість та надаємо гарантії</div>
+              <div class="topText content_title">Більше 10 років працюємо в&nbsp;сфері будівництва, інженерних та оздоблювальних робіт в&nbsp;Кам'янці-Подільському.</div>
+              <div class="imageBlock"><img src="img/Bl7Img1.png" alt="">
+                <div class="imageText content_text">Особисто відповідаємо за якість та надаємо гарантії</div>
               </div>
             </div>
             <div class="rightSide">
-              <div class="topText">Використовуємо перевірені часом матеріали і обладнання від європейських і українських брендів:
-                <div class="itemsContent">
-                  <div class="item">
-                    <div class="imgBlock"><img src="Bl7Img1,jpeg" alt=""></div>
-                    <div class="textBlock">будівельні суміші Knauf, Krumix, Siltec;</div>
+              <div class="topText content_title">Використовуємо перевірені часом матеріали і&nbsp;обладнання від європейських і&nbsp;українських брендів:</div>
+              <div class="itemsContent">
+                <div class="item">
+                  <div class="imgBlock"><img src="img/Bl7Img1.jpg" alt=""></div>
+                  <div class="textBlock content_text">будівельні суміші Knauf, Krumix, Siltec;</div>
+                </div>
+                <div class="item">
+                  <div class="imgBlock"><img src="img/Bl7Img2.jpg" alt=""></div>
+                  <div class="textBlock content_text">обладнання Putzmeister, PFT (Німеччина);</div>
+                </div>
+                <div class="item">
+                  <div class="imgBlock"><img src="img/Bl7Img3.jpg" alt=""></div>
+                  <div class="textBlock content_text">партнер магазину котельного обладнання «Kotelok».</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section8" id="section8">
+        <div class="siteWidth container-fluid">
+          <h2 class="title">Знайдемо оптимальне рішення саме для вас</h2>
+          <div class="innerWrapper">
+            <div class="item">
+              <div class="imgBlock"><img src="img/Bl8Img1.jpg" alt=""></div>
+              <div class="textBlock">
+                <div class="title content_title">Приватним клієнтам</div>
+                <ul class="content_text">
+                  <li>Вивчимо об'єкт і&nbsp;підберемо оптимальні матеріали для ваших завдань.</li>
+                  <li>Врахуємо особливості дизайн-проекту, майбутнього оздоблення.</li>
+                  <li>Візьмемо на себе всі клопоти, щоб ви отримали дійсно рівні, оштукатурені стіни в квартирі, будинку, котеджі.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <div class="imgBlock"><img src="img/Bl8Img2.jpg" alt=""></div>
+              <div class="textBlock">
+                <div class="title content_title">Виконробам, будівельникам, дизайнерам</div>
+                <ul class="content_text">
+                  <li>Візьмемо на себе всі&nbsp;додаткові роботи: переговори, заміри, складання кошторису і т.д.</li>
+                  <li>Станемо вашим надійним партнером і&nbsp;надамо спеціальні умови по співпраці.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <div class="imgBlock"><img src="img/Bl8Img3.jpg" alt=""></div>
+              <div class="textBlock">
+                <div class="title content_title">Забудовникам</div>
+                <ul class="content_text">
+                  <li>Станемо вашим надійним підрядником по штукатурним роботам: є&nbsp;всі дозвільні документи.</li>
+                  <li>Зможемо стабільно і&nbsp;вчасно виконувати великі замовлення для реалізації ваших об'єктів.</li>
+                  <li>Працюємо за договором і&nbsp;безготівковим розрахунком.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section9" id="section9">
+        <div class="siteWidth container-fluid">
+          <div class="innerWrapper">
+            <div class="imageBlock"><img src="img/Bl9Img1.png" alt=""></div>
+            <div class="formBlock">
+              <div class="wrapper">
+                <div class="title content_title">Залиште заявку прямо зараз, щоб отримати консультацію і&nbsp;попередній розрахунок</div>
+                <form onsubmit="Index.sendInit(this);return false" novalidate>
+                  <input type="hidden" name="project_name" value="B-lawyer">
+                  <input type="hidden" name="admin_email" value="">
+                  <input type="hidden" name="registration_type" value="CallBack form">
+                  <input type="hidden" name="order_type" value="Call request">
+                  <input type="hidden" name="page_url" value="">
+                  <input type="hidden" name="user_agent" value="&lt;?php echo $user_agent?&gt;">
+                  <input type="hidden" name="utm_source" value="&lt;?php echo $data[&quot;utm_source&quot;]?&gt;">
+                  <input type="hidden" name="utm_campaign" value="&lt;?php echo $data[&quot;utm_campaign&quot;]?&gt;">
+                  <input type="hidden" name="utm_medium" value="&lt;?php echo $data[&quot;utm_medium&quot;]?&gt;">
+                  <input type="hidden" name="utm_term" value="&lt;?php echo $data[&quot;utm_term&quot;]?&gt;">
+                  <input type="hidden" name="utm_content" value="&lt;?php echo $data[&quot;utm_content&quot;]?&gt;">
+                  <input type="hidden" name="ref" value="&lt;?php echo $data[&quot;ref&quot;]?&gt;">
+                  <input type="hidden" name="ip_address" value="&lt;?php echo $data[&quot;ip_address&quot;]?&gt;">
+                  <input type="hidden" name="city" value="">
+                  <input type="hidden" name="region" value="">
+                  <input type="hidden" name="country" value="">
+                  <input type="hidden" name="client_id" value="&lt;?php echo $data[&quot;client_id&quot;]?&gt;">
+                  <input type="hidden" name="utmcsr" value="&lt;?php echo $data[&quot;utmcsr&quot;]?&gt;">
+                  <input type="hidden" name="utmccn" value="&lt;?php echo $data[&quot;utmccn&quot;]?&gt;">
+                  <input type="hidden" name="utmcmd" value="&lt;?php echo $data[&quot;utmcmd&quot;]?&gt;">
+                  <input type="hidden" name="click_id" value="&lt;?php echo $data[&quot;click_id&quot;]?&gt;">
+                  <input type="hidden" name="affilliate_id" value="&lt;?php echo $data[&quot;affiliate_id&quot;]?&gt;">
+                  <div class="inputWrapper">
+                    <input name="phone" type="tel" required>
+                    <div class="text">
+                          <svg class="icon icon-phone ">
+                            <use xlink:href="#phone"></use>
+                          </svg><span>Ваш телефон</span>
+                    </div>
                   </div>
-                  <div class="item">
-                    <div class="imgBlock"><img src="Bl7Img2,jpeg" alt=""></div>
-                    <div class="textBlock">обладнання Putzmeister, PFT (Німеччина);</div>
+                  <div class="btnWrap">
+                    <button class="btn"><span>Відправити</span>
+                          <svg class="icon icon-chat ">
+                            <use xlink:href="#chat"></use>
+                          </svg>
+                    </button>
                   </div>
-                  <div class="item">
-                    <div class="imgBlock"><img src="Bl7Img3,jpeg" alt=""></div>
-                    <div class="textBlock">партнер магазину котельного обладнання «Kotelok».</div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section10" id="section10">
+        <div class="siteWidth container-fluid">
+          <h2 class="title">Що кажуть наші клієнти та партнери</h2>
+          <div class="sliderBlock">
+            <div class="item">
+              <div class="imageBlock"><img src="img/videoStub1.jpg" alt=""></div>
+              <div class="text content_text">Дякую за роботу. Все було зроблено якісно і сроки приємно здивували.</div>
+              <div class="name">Олексій Курпатов</div>
+            </div>
+            <div class="item">
+              <div class="imageBlock"><img src="img/videoStub2.jpg" alt=""></div>
+              <div class="text content_text">Дякую за роботу. Все було зроблено якісно і сроки приємно здивували.</div>
+              <div class="name">Олексій Курпатов</div>
+            </div>
+            <div class="item">
+              <div class="imageBlock"><img src="img/videoStub1.jpg" alt=""></div>
+              <div class="text content_text">Дякую за роботу. Все було зроблено якісно і сроки приємно здивували.</div>
+              <div class="name">Олексій Курпатов</div>
+            </div>
+            <div class="item">
+              <div class="imageBlock"><img src="img/videoStub2.jpg" alt=""></div>
+              <div class="text content_text">Дякую за роботу. Все було зроблено якісно і сроки приємно здивували.</div>
+              <div class="name">Олексій Курпатов</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section11" id="section11">
+        <div class="siteWidth container-fluid">
+          <div class="titleBlock">
+            <h2 class="title">Як ми працюємо і&nbsp;що входить у&nbsp;вартість</h2>
+            <div class="description content_title">До кінця лютого ви можете замовити роботи + матеріали від 195&nbsp;грн за&nbsp;1&nbsp;м2. Вартість машинної штукатурки залежить від матеріалу, обсягу та специфіки об'єкта.</div>
+          </div>
+          <div class="innerWrapper">
+            <div class="item">
+                  <svg class="icon icon-sketch ">
+                    <use xlink:href="#sketch"></use>
+                  </svg>
+              <div class="text content_text"><b>Безкоштовно<br> виїжджаємо на об'єкт,</b><br> відповідаємо на&nbsp;питання, робимо<br> розрахунок.</div>
+            </div>
+            <div class="item">
+                  <svg class="icon icon-agreement ">
+                    <use xlink:href="#agreement"></use>
+                  </svg>
+              <div class="text content_text"><b>Готуємо<br> детальний кошторис</b><br> та домовляємося про<br> початок співпраці.</div>
+            </div>
+            <div class="item">
+                  <svg class="icon icon-kit ">
+                    <use xlink:href="#kit"></use>
+                  </svg>
+              <div class="text content_text"><b>Привозимо<br> матеріали<br> та обладнання</b> до вас<br> на об'єкт.</div>
+            </div>
+            <div class="item">
+                  <svg class="icon icon-wall ">
+                    <use xlink:href="#wall"></use>
+                  </svg>
+              <div class="text content_text"><b>Виконуємо<br> механізовану<br> штукатурку</b><br> в обумовлені терміни<br> або навіть раніше.</div>
+            </div>
+            <div class="item">
+                  <svg class="icon icon-wheelbarrow ">
+                    <use xlink:href="#wheelbarrow"></use>
+                  </svg>
+              <div class="text content_text"><b>Здійснюємо<br> прибирання на об'єкті,</b><br> вивозимо сміття, якщо<br> потрібно — залишаємо<br> тепловентилятори, щоб<br> стіни просохли.</div>
+            </div>
+            <div class="item">
+                  <svg class="icon icon-list ">
+                    <use xlink:href="#list"></use>
+                  </svg>
+              <div class="text content_text"><b>Ви перевіряєте<br> роботу, приймаєте<br> об'єкт.</b> Через 1-2 тижні<br> ми зв'язуємося з вами,<br> щоб впевнитись, що все<br> в порядку.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section12" id="section12">
+        <div class="siteWidth container-fluid">
+          <h2 class="title">Приклади наших робіт</h2>
+          <div class="innerWrapper">
+            <div class="item" style="background-image:url(img/Bl12Img1.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img1.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img2.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img2.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img3.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img3.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img4.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img4.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+          </div>
+          <div class="btnWrap">
+            <button class="btn"><span>ЗАВАНТАЖИТИ БІЛЬШЕ РОБІТ</span>
+                  <svg class="icon icon-plus ">
+                    <use xlink:href="#plus"></use>
+                  </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section13">
+        <div class="siteWidth container-fluid">
+          <div class="innerWrapper">
+            <div class="leftSide">
+                  <svg class="icon icon-warranty ">
+                    <use xlink:href="#warranty"></use>
+                  </svg>
+            </div>
+            <div class="rightSide">
+              <div class="title content_title">1 рік гарантія на машинну штукатурку</div>
+              <div class="text content_text">Якщо виникнуть<br class='tab'> будь-які дефекти, ми все<br class='tab'> виправимо безкоштовно.<br class='tab'> Хоча за 10 років такого<br class='tab'> ще жодного разу не було.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section14">
+        <div class="siteWidth container-fluid">
+          <h2 class="title">Відповіді<br> на популярні питання</h2>
+          <div class="innerWrapper">
+            <div class="leftSide">
+              <div class="accordionBlock">
+                <div class="accordionItem active">
+                  <div class="title content_title">Скільки коштує машинна штукатурка?</div>
+                  <div class="text content_text">Вартість залежить від матеріалу, обсягів і термінів. До кінця лютого діють спеціальні ціни: робота + матеріали від 195 грн.</div>
+                  <div class="switcher">
+                        <svg class="icon icon-faq_plus ">
+                          <use xlink:href="#faq_plus"></use>
+                        </svg>
+                        <svg class="icon icon-faq_minus ">
+                          <use xlink:href="#faq_minus"></use>
+                        </svg>
                   </div>
                 </div>
+                <div class="accordionItem">
+                  <div class="title content_title">Чи можна після штукатурки відразу фарбувати стіни?</div>
+                  <div class="text content_text">Вартість залежить від матеріалу, обсягів і термінів. До кінця лютого діють спеціальні ціни: робота + матеріали від 195 грн.</div>
+                  <div class="switcher">
+                        <svg class="icon icon-faq_plus ">
+                          <use xlink:href="#faq_plus"></use>
+                        </svg>
+                        <svg class="icon icon-faq_minus ">
+                          <use xlink:href="#faq_minus"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="accordionItem">
+                  <div class="title content_title">Як швидко ви можете виконати проект?</div>
+                  <div class="text content_text">Вартість залежить від матеріалу, обсягів і термінів. До кінця лютого діють спеціальні ціни: робота + матеріали від 195 грн.</div>
+                  <div class="switcher">
+                        <svg class="icon icon-faq_plus ">
+                          <use xlink:href="#faq_plus"></use>
+                        </svg>
+                        <svg class="icon icon-faq_minus ">
+                          <use xlink:href="#faq_minus"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rightSide">
+              <div class="infoBlock">
+                <div class="title content_title">Якщо не знайшли відповідь на своє питання або потрібна консультація</div>
+                <div class="text content_text">зв'яжіться з нами зручним для вас способом</div><a class="phone" href="tel:+380993452512">+38 (099) 345-25-12</a>
+                <button class="btn"><span>ЗАМОВИТИ ДЗВІНОК</span>
+                      <svg class="icon icon-phone ">
+                        <use xlink:href="#phone"></use>
+                      </svg>
+                </button>
+                <div class="socialBlock"><a class="social">
+                        <svg class="icon icon-telegram ">
+                          <use xlink:href="#telegram"></use>
+                        </svg><span class="title">Telegram</span></a><a class="social">
+                        <svg class="icon icon-viber ">
+                          <use xlink:href="#viber"></use>
+                        </svg><span class="title">Viber</span></a><a class="social">
+                        <svg class="icon icon-instagram ">
+                          <use xlink:href="#instagram"></use>
+                        </svg><span class="title">Instagram</span></a></div>
               </div>
             </div>
           </div>
@@ -889,7 +1298,16 @@
           </div>
         </div>
       </div>
-      <!--include footerBottom-->
+      <div class="footerBottom">
+        <div class="siteWidth container-fluid">
+          <div class="innerWrapper">
+            <div class="politics"><a href="#" onclick="Index.showPolitics(1);">ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</a><a href="#" onclick="Index.showPolitics(2);">ВІДМОВа ВІД ВІДПОВІДАЛЬНОСТІ</a><a href="#" onclick="Index.showPolitics(3);">ЗГОДА З РОЗСИЛКОЮ</a></div><a class="upArrow" href="#section1" onclick="Index.go_to(this, event)">
+                  <svg class="icon icon-up ">
+                    <use xlink:href="#up"></use>
+                  </svg></a>
+          </div>
+        </div>
+      </div>
     </footer>
     <div class="hiddenBlock">
       <div class="orderPanel" id="mainForm">
@@ -897,7 +1315,7 @@
           <p class="title">Заказать звонок</p>
           <p class="desc">для заказа заполните форму ниже</p>
           <form onsubmit="Index.sendInit(this);return false" novalidate>
-            <input type="hidden" name="project_name" value="B-lawyer">
+            <input type="hidden" name="project_name" value="Mazur">
             <input type="hidden" name="admin_email" value="">
             <input type="hidden" name="registration_type" value="pop-up форма">
             <input type="hidden" name="order_type" value="Call request">
@@ -935,7 +1353,7 @@
         <div class="wrapper">
           <p class="title">Мы вам перезвоним</p>
           <form onsubmit="Index.sendInit(this);return false" novalidate>
-            <input type="hidden" name="project_name" value="B-lawyer">
+            <input type="hidden" name="project_name" value="Mazur">
             <input type="hidden" name="admin_email" value="">
             <input type="hidden" name="registration_type" value="CallBack form">
             <input type="hidden" name="order_type" value="Call request">
