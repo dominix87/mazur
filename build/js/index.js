@@ -20,7 +20,11 @@ var Index =
 
     $('.accordionItem', '.section14').not(':first').find('.text').hide();
 
+    $('.item','.gridBlock').slice(0, 50).css('display', 'none');
+
     $('input[name=phone]').mask('+38(099)999-99-99');
+
+
 
 
     Index.magnificPopUp();
@@ -29,7 +33,76 @@ var Index =
     Index.reviewsSliderInit();
     Index.mobileSliderInit();
     Index.showAccordionItems();
+    Index.questionWork();
+    Index.showMore();
   },
+
+  showMore: function(fThis){
+    var items = $('.item:hidden','.gridBlock'),
+        shown = $('.item','.gridBlock');
+    // if($(window).width() > 992) {
+    if ($(fThis).hasClass('less')) {
+      $(fThis).removeClass('less').html('<span>ЗАВАНТАЖИТИ БІЛЬШЕ РОБІТ</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 10 10"><rect x="4" width="2" height="10"></rect><rect y="4" width="10" height="2"></rect></svg>');
+      $(shown).slice(4, 50).slideUp('slow');
+      $('html, body').animate({scrollTop: ($('.section12').offset().top - 50)}, 1000);
+    } else {
+      if ($(items).length <= 4) {
+        $(items).slice(0, 4).slideDown('slow');
+        $(fThis).addClass('less').html('<span>СХОВАТИ</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 10 10"><rect y="4" width="10" height="2"></rect></svg>');
+      } else {
+        $(items).slice(0, 4).slideDown('slow');
+      }
+    }
+    // }
+    // else{
+    //   if ($(fThis).hasClass('less')) {
+    //     $(fThis).removeClass('less').html('<span>Показать<br> еще</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 38"><polyline points="16,0 18,0 18,36 16,36 16,0" fill="inherit"/><path d="M32.6,20l1.4,1.4L17,38l-1.4-1.4L32.6,20 M18.4,36.6L17,38L0,21.5l1.4-1.4L18.4,36.6 M17,38l1.4-1.4L17,38L17,38L17,38z M17,38l-1.4-1.4L17,38L17,38L17,38z" fill="inherit"/></svg>');
+    //     $(shown).slice(7, 50).slideUp('slow');
+    //     $('html, body').animate({scrollTop: ($('.section5').offset().top)}, 1000);
+    //   } else {
+    //     if ($(items).length <= 7) {
+    //       $(items).slice(0, 7).slideDown('slow');
+    //       $(fThis).addClass('less').html('<span>Скрыть<br> все</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 38"><polyline points="16,0 18,0 18,36 16,36 16,0" fill="inherit"/><path d="M32.6,20l1.4,1.4L17,38l-1.4-1.4L32.6,20 M18.4,36.6L17,38L0,21.5l1.4-1.4L18.4,36.6 M17,38l1.4-1.4L17,38L17,38L17,38z M17,38l-1.4-1.4L17,38L17,38L17,38z" fill="inherit"/></svg>')
+    //     } else {
+    //       $(items).slice(0, 7).slideDown('slow');
+    //     }
+    //   }
+    // }
+  },
+
+
+  questionWork: function()
+  {
+    var questionWrap = $('.questionWrap','.section6'),
+      item = $('.question', questionWrap),
+      nextQuestion = $('.nextQuestionBtn',item),
+      progressBar = $('.progressBar', '.section6'),
+      btnProgress = $('button', progressBar);
+
+    $(item).not(':first').fadeOut();
+
+    $(btnProgress).on('click', function(){
+      var ind = $(this).parent().index();
+      $('li', progressBar).removeClass('active');
+      $(this).parent().addClass('active');
+      $(item).fadeOut('fast');
+      setTimeout(function(){
+        $(item).eq(ind).fadeIn('fast');
+      },200);
+
+    });
+
+    $(nextQuestion).on('click', function(){
+      var ind = $(this).parents('.question').index('.question') + 1;
+      $('li', progressBar).removeClass('active');
+      $('li', progressBar).eq(ind).addClass('active');
+      $(this).parents('.question').fadeOut('fast', function(){
+        $(this).next().fadeIn('fast');
+      });
+    });
+
+  },
+
 
   showAccordionItems: function(){
     var block = $('.accordionBlock', '.section14'),

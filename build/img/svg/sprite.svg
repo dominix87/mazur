@@ -31,6 +31,9 @@
         <rect x="4" width="2" height="10"/>
         <rect y="4" width="10" height="2"/>
     </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 10 10">
+        <rect y="4" width="10" height="2"/>
+    </symbol>
     <symbol xmlns="http://www.w3.org/2000/svg" id="time" viewBox="0 0 512 512">
         <path d="M256,0C114.8,0,0,114.8,0,256s114.8,256,256,256s256-114.8,256-256S397.2,0,256,0z M301.3,346.5L224,269.2V128h64v114.8l58.5,58.5L301.3,346.5z"/>
     </symbol>

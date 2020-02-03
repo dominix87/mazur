@@ -850,7 +850,20 @@
           <div class="innerWrapper">
             <div class="imageBlock"><img src="img/Bl6Img1.png" alt=""></div>
             <div class="formBlock">
-              <div class="stages"></div>
+              <ul class="progressBar">
+                <li class="active">
+                  <button>1</button>
+                </li>
+                <li>
+                  <button>2</button>
+                </li>
+                <li>
+                  <button>3</button>
+                </li>
+                <li>
+                  <button>4</button>
+                </li>
+              </ul>
               <div class="title content_title">Розрахуйте прямо зараз вартість машинної штукатурки для вашого об'єкту</div>
               <div class="questionWrap">
                 <form onsubmit="Index.sendInit(this);return false" novalidate>
@@ -882,37 +895,41 @@
                       <input name="square" type="tel" required>
                       <div class="text"><span>Площа</span></div>
                     </div>
-                    <div class="btnWrap"><span class="btn"><span>ДАЛІ</span>
+                    <div class="btnWrap"><span class="btn nextQuestionBtn"><span>ДАЛІ</span>
                             <svg class="icon icon-rightArrow ">
                               <use xlink:href="#rightArrow"></use>
                             </svg></span></div>
                   </div>
                   <div class="question second">
-                    <div class="questionTitle content_text">2. Для чого:</div>
-                    <div class="inputWrapper checkbox">
-                      <input name="square" type="checkbox" id="check1">
-                      <label for="check1">Під фарбування</label>
+                    <div class="questionTitle content_text">2. Штукатурка під фарбування чи шпалери:</div>
+                    <div class="wrapper">
+                      <div class="inputWrapper radio">
+                        <input name="forWhat" type="radio" id="check1" checked>
+                        <label for="check1">Під фарбування</label>
+                      </div>
+                      <div class="inputWrapper radio">
+                        <input name="forWhat" type="radio" id="check2">
+                        <label for="check2">Під шпалери</label>
+                      </div>
                     </div>
-                    <div class="inputWrapper checkbox">
-                      <input name="square" type="checkbox" id="check2">
-                      <label for="check2">Під шпалери</label>
-                    </div>
-                    <div class="btnWrap"><span class="btn"><span>ДАЛІ</span>
+                    <div class="btnWrap"><span class="btn nextQuestionBtn"><span>ДАЛІ</span>
                             <svg class="icon icon-rightArrow ">
                               <use xlink:href="#rightArrow"></use>
                             </svg></span></div>
                   </div>
                   <div class="question third">
                     <div class="questionTitle content_text">3. Чий матеріал:</div>
-                    <div class="inputWrapper checkbox">
-                      <input name="square" type="checkbox" id="check3">
-                      <label for="check3">Свій матеріал</label>
+                    <div class="wrapper">
+                      <div class="inputWrapper radio">
+                        <input name="material" type="radio" id="check3" checked>
+                        <label for="check3">Свій матеріал</label>
+                      </div>
+                      <div class="inputWrapper radio">
+                        <input name="material" type="radio" id="check4">
+                        <label for="check4">Наш матеріал</label>
+                      </div>
                     </div>
-                    <div class="inputWrapper checkbox">
-                      <input name="square" type="checkbox" id="check4">
-                      <label for="check4">Наш матеріал</label>
-                    </div>
-                    <div class="btnWrap"><span class="btn"><span>ДАЛІ</span>
+                    <div class="btnWrap"><span class="btn nextQuestionBtn"><span>ДАЛІ</span>
                             <svg class="icon icon-rightArrow ">
                               <use xlink:href="#rightArrow"></use>
                             </svg></span></div>
@@ -921,7 +938,11 @@
                     <div class="questionTitle content_text">1. Введіть свій телефон</div>
                     <div class="inputWrapper">
                       <input name="phone" type="tel" required>
-                      <div class="text"><span>Площа</span></div>
+                      <div class="text">
+                            <svg class="icon icon-phone ">
+                              <use xlink:href="#phone"></use>
+                            </svg><span>Ваш телефон</span>
+                      </div>
                     </div>
                     <div class="btnWrap">
                       <button class="btn"><span>Відправити</span>
@@ -1133,7 +1154,175 @@
       <section class="section12" id="section12">
         <div class="siteWidth container-fluid">
           <h2 class="title">Приклади<br class='later2'> наших робіт</h2>
-          <div class="innerWrapper">
+          <div class="innerWrapper gridBlock">
+            <div class="item" style="background-image:url(img/Bl12Img1.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img1.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img2.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img2.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img3.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img3.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img4.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img4.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img1.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img1.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img2.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img2.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img3.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img3.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img4.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img4.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img1.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img1.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img2.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img2.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img3.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img3.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
+            <div class="item" style="background-image:url(img/Bl12Img4.jpg)">
+              <button class="info">
+                    <svg class="icon icon-infoIcon ">
+                      <use xlink:href="#infoIcon"></use>
+                    </svg>
+              </button>
+              <div class="hiddenBlock">
+                <div class="title content_title">Кам'янець-Подільський</div>
+                <div class="text content_text">По термінах впоралися за півтора дня. Побачили і порадили як підправити помилки проектувальника, рекомендую.</div>
+              </div><a class="zoom popup-image" href="img/Bl12Img4.jpg">
+                    <svg class="icon icon-zoom ">
+                      <use xlink:href="#zoom"></use>
+                    </svg></a>
+            </div>
             <div class="item" style="background-image:url(img/Bl12Img1.jpg)">
               <button class="info">
                     <svg class="icon icon-infoIcon ">
@@ -1192,7 +1381,7 @@
             </div>
           </div>
           <div class="btnWrap">
-            <button class="btn"><span>ЗАВАНТАЖИТИ БІЛЬШЕ РОБІТ</span>
+            <button class="btn" onclick="Index.showMore(this)"><span>ЗАВАНТАЖИТИ БІЛЬШЕ РОБІТ</span>
                   <svg class="icon icon-plus ">
                     <use xlink:href="#plus"></use>
                   </svg>
