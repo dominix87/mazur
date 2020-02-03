@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
-    <title>Pay Expert</title>
+    <title>Mazur Group</title>
   </head>
   <body><svg xmlns="http://www.w3.org/2000/svg" id="mainSprite">
     <symbol xmlns="http://www.w3.org/2000/svg" id="rezart_logo" viewBox="0 0 446.4 267.24">
@@ -579,7 +579,7 @@
               <div class="description content_text">Скоро керівник бригади зв'яжеться з вами =)</div>
               <div class="btnWrap"><a class="btn" href="/"><span>На главную страницу</span></a></div>
             </div>
-            <div class="imageBlock"><img src="img/bl1img1.png" alt=""></div>
+            <div class="imageBlock"><img src="img/Bl1Img1.png" alt=""></div>
           </div>
         </div>
       </section>
@@ -646,7 +646,7 @@
       </div>
       <div class="orderPanel" id="callBackForm">
         <div class="wrapper">
-          <p class="title">Мы вам перезвоним</p>
+          <p class="title content_title">Для замовлення<br> дзвінка заповніть форму</p>
           <form onsubmit="Index.sendInit(this);return false" novalidate>
             <input type="hidden" name="project_name" value="Mazur">
             <input type="hidden" name="admin_email" value="">
@@ -671,13 +671,19 @@
             <input type="hidden" name="click_id" value="&lt;?php echo $data[&quot;click_id&quot;]?&gt;">
             <input type="hidden" name="affilliate_id" value="&lt;?php echo $data[&quot;affiliate_id&quot;]?&gt;">
             <div class="inputWrapper">
-              <input placeholder="Имя" name="name" type="text" required>
+              <input name="name" type="text" required>
+              <div class="text"><span>Введіть ім’я</span></div>
             </div>
             <div class="inputWrapper">
-              <input placeholder="Телефон" name="phone" type="tel" required>
+              <input name="phone" type="tel" required>
+              <div class="text"><span>Введіть телефон</span></div>
             </div>
             <div class="btnWrap">
-              <button class="btn">Заказать взонок</button>
+              <button class="btn"><span>Перетелефонуйте мені</span>
+                    <svg class="icon icon-rightArrow ">
+                      <use xlink:href="#rightArrow"></use>
+                    </svg>
+              </button>
             </div>
           </form>
         </div>
